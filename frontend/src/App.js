@@ -1,25 +1,19 @@
-import logo from './logo.svg';
-import './App.css';
+import React, {Component} from 'react';
+import axios from 'axios';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+const server = 'http://localhost:8080/api/sample';
+
+class App extends Component {
+  // この関数を編集
+  handleClick(event) {
+    axios.get(server)
+      .then((res) => { console.log(res); })
+      .catch(console.error);
+  }
+
+  render() {
+    return ( <div> <button onClick={this.handleClick}>Get Data</button> </div> );
+  }
 }
 
 export default App;
