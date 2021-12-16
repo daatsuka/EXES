@@ -70,11 +70,7 @@
     text-transform: capitalize;
 }
 
-.card{
-    background-color: #FFFFFF;
-    padding: 10px 0 20px;
-    width: 100%;
-}
+
 .card h3{
     margin-bottom: 20px;
 }
@@ -317,7 +313,7 @@
   left:0;
 }
 .blurred-container > .img-src{
-    position:fixed;
+
     width:100%;
     height:540px;
     background-repeat:no-repeat;
@@ -398,3 +394,32 @@
     display: inline-block;
     margin-bottom: 25px;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

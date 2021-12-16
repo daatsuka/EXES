@@ -309,19 +309,11 @@
 	</div>
 
 
-	<form th:action="@{/profile/movie}" method="post">
-		
-		<p>
-			<input type="submit" value="動画ページへ">
-		</p>
-	</form>
-		<form th:action="@{/profile/blog}" method="post">
-		
-		<p>
-			<input type="submit" value="ブログページへ">
-		</p>
-	</form>
-	<a href=”@{/profile/age}”>次のページへ</a>
+ブログページ
+
+<tr th:each="movie : ${movieList}">
+  <td th:text="${movie.title}" class="tdtest"></td>
+</tr>
 
 	<!--   end typography -->
 	<div class="space"></div>
