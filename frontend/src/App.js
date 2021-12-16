@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 import axios from 'axios';
 
-const server = 'http://localhost:8080/api/sample';
+const server = 'http://localhost:8080/api';
 
 class App extends Component {
   // この関数を編集
